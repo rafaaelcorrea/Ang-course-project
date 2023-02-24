@@ -1,11 +1,17 @@
-import { Component } from '@angular/core';
-//import {RecipeListComponent} from '../recipe-list/recipe-list.component';
+import { Component, OnInit, Input } from '@angular/core';
+import { Recipe } from '../recipe-module';
 
 @Component({
   selector: 'app-recipe-detail',
   templateUrl: './recipe-detail.component.html',
   styleUrls: ['./recipe-detail.component.css']
 })
-export class RecipeDetailComponent {
-  //public recipes: RecipeListComponent[];
+export class RecipeDetailComponent  implements OnInit{
+  
+  @Input() recipe:Recipe;
+
+  
+  ngOnInit() {
+    
+  }
 }
