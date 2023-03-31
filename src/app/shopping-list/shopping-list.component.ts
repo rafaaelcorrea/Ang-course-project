@@ -20,4 +20,15 @@ export class ShoppingListComponent implements OnInit {
   onIngredientAdded (ingredient: Ingredient){
     this.ingredients.push(ingredient);
   }
+
+  /*
+  onIngredientDeleted( ingredient: Ingredient){
+   
+    this.ingredients.splice();
+}
+*/
+selectedItem( itemList: any){
+
+}
+
 }
